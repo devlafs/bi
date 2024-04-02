@@ -1,0 +1,11 @@
+.iziModal {
+    .iziModal__header {
+        background-color: $secondary-color;
+        color: $white-color;
+        border-bottom: none;
+        height: 3.429em;
+    }
+    .iziModal__body {
+        // height: calc(100vh - 320px);
+    }
+}

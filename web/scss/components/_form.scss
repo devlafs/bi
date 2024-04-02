@@ -1,0 +1,88 @@
+//modelo de form inline
+.input-group-addon.form-control-lg,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.input-group-addon.btn,
+.form-control-lg,
+.input-group-lg>.form-control,
+.input-group-lg>.input-group-addon,
+.input-group-lg>.input-group-btn>.btn {
+    padding: 0.9286rem 0.9286rem;
+    font-size: 0.9286rem;
+    border-radius: 0;
+    text-align: left;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    &:focus {
+        border-bottom-color: $primary-color;
+    }
+}
+
+.input-group-addon {
+    color: $gray1-bp1;
+}
+
+//para alterar a cor do input como erro, warning ou sucesso basta no elemento form-group adicionar logo em seguida uma das classes:
+//has-danger
+//has-warning
+//has-success
+.painel__title--edit {
+    .form-control {
+        font-size: 1.714rem;
+        font-weight: 300;
+        line-height: 2.286rem;
+        color: $primary-color;
+        border-radius: 0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1.95px dashed $gray1-bp1;
+        &::-webkit-input-placeholder,
+        &::-moz-placeholder,
+        &:-ms-input-placeholder,
+        &:-moz-placeholder {
+            color: $gray1-bp1
+        }
+        &:focus {
+            border-bottom-color: $primary-color;
+        }
+    }
+    /* Defina um nome para: */
+}
+
+// exclusive for nav
+.pageContent--nav {
+    .form-control {
+        padding-top: 0px;
+        border-bottom: 1.95px dashed $white-color;
+        color: $white-color !important;
+        background-color: transparent;
+        padding-bottom: 0;
+        margin-top: 0px;
+        // &::-webkit-input-placeholder,
+        // &::-moz-placeholder,
+        // &:-ms-input-placeholder,
+        // &:-moz-placeholder {
+        //     color: $white-color !important;
+        // }
+        &:focus {
+            border-bottom-color: $white-color;
+        }
+    }
+    input {
+        &::placeholder {
+            /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: $white-color;
+            /* Firefox */
+        }
+        &:-ms-input-placeholder {
+            /* Internet Explorer 10-11 */
+            color: $white-color;
+        }
+        &::-ms-input-placeholder {
+            /* Microsoft Edge */
+            color: $white-color;
+        }
+    }
+}

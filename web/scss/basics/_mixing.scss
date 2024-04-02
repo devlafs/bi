@@ -1,0 +1,59 @@
+@mixin rot($deg: 90) {
+    $sDeg: #{$deg}deg;
+    -webkit-transform: rotate($sDeg);
+    -moz-transform: rotate($sDeg);
+    -ms-transform: rotate($sDeg);
+    -o-transform: rotate($sDeg);
+    transform: rotate($sDeg);
+}
+
+//Animations
+@keyframes spinning180 {
+    0% {
+        /* Safari */
+        -webkit-transform: rotate(0deg);
+        /* Firefox */
+        -moz-transform: rotate(0deg);
+        /* IE */
+        -ms-transform: rotate(0deg);
+        /* Opera */
+        -o-transform: rotate(0deg);
+        /* Internet Explorer */
+        filter: 'progid: DXImageTransform.Microsoft.BasicImage(rotation=1)';
+    }
+    100% {
+        /* Safari */
+        -webkit-transform: rotate(180deg);
+        /* Firefox */
+        -moz-transform: rotate(180deg);
+        /* IE */
+        -ms-transform: rotate(180deg);
+        /* Opera */
+        -o-transform: rotate(180deg);
+        /* Internet Explorer */
+        filter: 'progid: DXImageTransform.Microsoft.BasicImage(rotation=4)';
+    }
+}
+
+//Dropshadow
+@mixin box-shadow($shadow1, $shadow2:false) {
+    $params: $shadow1;
+    @if $shadow2 {
+        $params: $shadow1, $shadow2;
+    }
+    -webkit-box-shadow: $params;
+    -moz-box-shadow: $params;
+    box-shadow: $params;
+}
+
+//Border Radius
+$vendors: "-moz-",
+"-webkit-",
+"o",
+"-ms-",
+"";
+@mixin rounded($radius: 0.5em) {
+    @each $vendor in $vendors {
+        #{$vendor}border-radius: $radius;
+    }
+}

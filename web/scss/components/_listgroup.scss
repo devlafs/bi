@@ -1,0 +1,80 @@
+.bp--accordion {
+    //transfer to a generalist style
+    margin-right: 1rem;
+    margin-left: 1rem;
+    .card-header {
+        a {
+            color: $primary-color;
+            text-decoration: none;
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+    .card-block {
+        padding: 0px;
+        .list-group-item {
+            &:first-child {
+                border-top-right-radius: 0px;
+                border-top-left-radius: 0px;
+            }
+            &.active {
+                background-color: $primary-color;
+                border-left: 1px solid rgba(0, 0, 0, .125);
+                border-right: 1px solid rgba(0, 0, 0, .125);
+            }
+            .badge-default {
+                background-color: $white-color;
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.attr-list {
+    padding: 0px;
+    margin: 0px;
+    li {
+        // data type 
+        list-style-type: none;
+        // label
+        span {
+            font-weight: 300;
+            font-size: 12px;
+            color: $text-color;
+            line-height: 12px;
+        }
+        // bg
+        background: $gray2-bp1;
+        @include rounded(100px);
+        margin-bottom:8px;
+        padding:5px 12px;
+        border: solid 1px $gray1-bp1;
+        //right toolbar
+        .attr-list__toolbar {
+            text-decoration: none;
+            background-color: transparent;
+            padding: 0px;
+            margin: 0px;
+            i {
+                color: $primary-color;
+                // height: 26px;
+                // width: 26px;
+                font-size: 16px;
+            }
+            &.dropdown {
+                .btn--noborder {
+                    padding: 0px;
+                    margin: 0px;
+                    &:hover {
+                        background-color: $primary-color;
+                        @include rounded(100%);
+                        i {
+                            color: $white-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

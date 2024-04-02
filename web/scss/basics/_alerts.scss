@@ -1,0 +1,53 @@
+.alert- {
+    &danger {
+        background-color: mix($error-bp1, $white-color, 15%);
+        border-color: $error-bp1;
+        color: $text-color;
+        i {
+            color: $error-bp1;
+        }
+        .alert-link {
+            text-decoration: underline;
+            color: $text-color;
+            font-weight: 300;
+            &:hover {
+                color: $error-bp1;
+                text-decoration: none;
+            }
+        }
+    }
+    &succes {
+        background-color: mix($success-bp1, $white-color, 15%);
+        border-color: $success-bp1;
+        color: $text-color;
+        i {
+            color: $success-bp1;
+        }
+        .alert-link {
+            text-decoration: underline;
+            color: $text-color;
+            font-weight: 300;
+            &:hover {
+                color: $success-bp1;
+                text-decoration: none;
+            }
+        }
+    }
+    &warning {
+        background-color: mix($warning-bp1, $white-color, 15%);
+        border-color: $warning-bp1;
+        color: $text-color;
+        i {
+            color: $warning-bp1;
+        }
+        .alert-link {
+            text-decoration: underline;
+            color: $text-color;
+            font-weight: 300;
+            &:hover {
+                color: $warning-bp1;
+                text-decoration: none;
+            }
+        }
+    }
+}

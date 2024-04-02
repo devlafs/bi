@@ -1,0 +1,21 @@
+{
+  "name": "js-md5",
+  "version": "0.6.1",
+  "main": [
+    "src/md5.js"
+  ],
+  "ignore": [
+    "tests"
+  ],
+  "homepage": "https://github.com/emn178/js-md5",
+  "_release": "0.6.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.6.1",
+    "commit": "2e4046818b9b76e23143666058ab0f491099b407"
+  },
+  "_source": "https://github.com/emn178/js-md5.git",
+  "_target": "^0.6.1",
+  "_originalSource": "md5",
+  "_direct": true
+}

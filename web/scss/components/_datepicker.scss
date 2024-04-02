@@ -1,0 +1,79 @@
+.input-daterange {
+    padding-top: 7.5px;
+    width: 250px;
+    margin-right: 15px;
+    .input-group-addon {
+        background-color: transparent;
+        color: $white-color;
+        border-left-color: none;
+        border-right-color: none;
+        border-top-color: $white-color;
+        border-bottom-color: $white-color;
+    }
+    .form-control {
+        padding: 0.6rem 0.2rem 0.6rem 0.7143rem;
+        font-size: 1rem;
+        line-height: 1rem;
+        color: $white-color;
+        border-radius: 0;
+        // border-width: 1.95px;
+        text-align: left;
+        background-color: transparent;
+        border-color: $white-color;
+        text-align: center;
+        &:focus {
+            border-bottom-color: $primary-color;
+        }
+        &:first-child {
+            border-top-left-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+        }
+        &:last-child {
+            border-top-right-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            padding-right: 0.7143rem;
+        }
+        &::-webkit-input-placeholder {
+            /* Chrome/Opera/Safari */
+            color: $white-color;
+        }
+        &::-moz-placeholder {
+            /* Firefox 19+ */
+            color: $white-color;
+        }
+        &:-ms-input-placeholder {
+            /* IE 10+ */
+            color: $white-color;
+        }
+        &:-moz-placeholder {
+            /* Firefox 18- */
+            color: $white-color;
+        }
+    }
+}
+
+.datepicker {
+    padding: 0px;
+}
+
+.datepicker td,
+.datepicker th {
+    width: 24px;
+    height: 28px;
+    padding: 0.7143rem;
+    border-radius: 3rem;
+}
+
+.selected.range-end.range-start {
+    border-radius: 3rem;
+}
+
+.selected.range-start {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.selected.range-end {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0
+}

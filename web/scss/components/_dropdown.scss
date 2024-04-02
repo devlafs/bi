@@ -1,0 +1,24 @@
+.dropdown-menu {
+    // border-color: mix($text-color, $secondary-color, 20%);
+    border-color: transparentize($secondary-color, 0.8);
+}
+
+.dropdown-item {
+    padding: 0.5714rem 1rem;
+    &:hover,
+    &:focus {
+        background-color: $primary-color;
+        color: $white-color;
+    }
+}
+
+.dropdown-item.disabled,
+.dropdown-item:disabled {
+    color: $gray1-bp1;
+    cursor: not-allowed;
+    background-color: transparent;
+    &:hover {
+        color: $gray1-bp1;
+        background-color: transparent;
+    }
+}

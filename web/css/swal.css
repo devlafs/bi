@@ -1,0 +1,11 @@
+.swal2-icon.swal2-success {
+    border-color: #007EC3;
+}
+
+.swal2-icon.swal2-success [class^=swal2-success-line] {
+    background-color: #007EC3;
+}
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: .25em solid #007EC3;
+}

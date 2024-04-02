@@ -1,0 +1,46 @@
+.table.dataTable {
+    margin-top: 0 !important;
+}
+
+.dataTables_filter {
+    input {
+        padding: 0.4286rem;
+        font-size: 0.9286rem;
+        border-radius: 0;
+        text-align: left;
+        background-color: transparent;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        &:focus {
+            border-bottom-color: $primary-color;
+        }
+    }
+    label {
+        text-transform: uppercase;
+        font-size: 0.8571rem;
+    }
+}
+
+.thead-default th {
+    font-size: 0.7857rem;
+    background-color: $gray2-bp1;
+    border-bottom: 1px solid $gray1-bp1;
+}
+
+.table td,
+.table th {
+    font-size: 0.7857rem;
+}
+
+.table tr {
+    &:nth-child(even) {
+        background-color: $white-color;
+    }
+}
+
+// #datagrid2_wrapper {
+//     margin-left: 0px;
+//     margin-right: 0px;
+//     width: 100%;
+// }

@@ -1,0 +1,78 @@
+$duration: 1s;
+$bb-spinner-size-small: 20px;
+$bb-spinner-size-normal: 24px;
+$bb-spinner-size-large: 32px;
+$bb-spinner-size-larger: 48px;
+$bb-spinner-size-xlarge: 102px;
+@mixin _bb-spinner-color($color) {
+    >div {
+        border-color: $color;
+    }
+}
+
+@mixin _bb-spinner-dimensions($diameter) {
+    $stroke: $diameter/30;
+    height: $diameter;
+    width: $diameter;
+    >div {
+        border-width: $stroke;
+        &.bb-r-spinner-circle-transparent {
+            border-radius: $diameter;
+        }
+        &.bb-r-spinner-circle {
+            border-top-left-radius: $diameter;
+            border-bottom-left-radius: $diameter;
+        }
+    }
+}
+
+@mixin bb-r-spinner {
+    @include _bb-spinner-dimensions($bb-spinner-size-xlarge);
+    @include _bb-spinner-color($primary-color);
+    position: relative;
+    >div {
+        border-style: solid;
+        height: 100%;
+        &.bb-r-spinner-circle-transparent {
+            width: 100%;
+            opacity: 0.2;
+        }
+        &.bb-r-spinner-circle {
+            position: absolute;
+            width: 50%;
+            border-right: 0;
+            top: 0;
+            left: 0;
+            transform-origin: right;
+            animation: rotator $duration linear infinite;
+        }
+    }
+    &.bb-r-spinner-small {
+        @include _bb-spinner-dimensions($bb-spinner-size-small);
+    }
+    &.bb-r-spinner-large {
+        @include _bb-spinner-dimensions($bb-spinner-size-large);
+    }
+    &.bb-r-spinner-larger {
+        @include _bb-spinner-dimensions($bb-spinner-size-larger);
+    }
+    &.bb-r-spinner-opaque {
+        @include _bb-spinner-color($white-color);
+    }
+    &.bb-r-spinner-secondary {
+        @include _bb-spinner-color($gray1-bp1);
+    }
+}
+
+.bb-r-spinner {
+    @include bb-r-spinner;
+}
+
+@keyframes rotator {
+    0% {
+        transform: rotate(90deg);
+    }
+    100% {
+        transform: rotate(450deg);
+    }
+}

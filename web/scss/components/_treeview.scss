@@ -1,0 +1,101 @@
+.tree,
+.tree ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tree ul {
+    margin-left: 1em;
+    position: relative;
+}
+
+.tree ul ul {
+    margin-left: .5em;
+}
+
+.tree ul:before {
+    content: "";
+    display: block;
+    width: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border-left: 1px solid;
+}
+
+.tree li {
+    margin: 0;
+    padding: 0 1.286rem;
+    line-height: 2em;
+    color: $white-color;
+    font-weight: 300;
+    position: relative;
+    cursor: pointer;
+}
+
+.tree ul li:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 0;
+    border-top: 1px solid;
+    margin-top: -1px;
+    position: absolute;
+    top: 1em;
+    left: 0;
+}
+
+.tree ul li:last-child:before {
+    background: $secondary-color;
+    height: auto;
+    top: 1em;
+    bottom: 0;
+}
+
+.indicator {
+    margin-right: 5px;
+}
+
+.tree li a {
+    text-decoration: none;
+    color: $white-color;
+    padding: 0.3em 1rem;
+    border-radius: 100px;
+    &:hover {
+        background-color: mix($white-color, $primary-color, 20%);
+        animation: background-color 2s ease-in-out;
+        .tree__badge--updated {
+            color: $white-color;
+        }
+    }
+    &.active {
+        background-color: mix($white-color, $secondary-color, 20%);
+        &:hover {
+            background-color: mix($white-color, $primary-color, 20%);
+            .tree__badge--updated {
+                color: $white-color;
+            }
+        }
+    }
+}
+
+.tree li button,
+.tree li button:active,
+.tree li button:focus {
+    text-decoration: none;
+    color: #369;
+    border: none;
+    background: transparent;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    outline: 0;
+}
+
+.tree__badge--updated {
+    color: lighten($success-bp1, .5);
+    font-size: 1.25rem;
+    margin-left: -1rem;
+    margin-right: .2em;
+}

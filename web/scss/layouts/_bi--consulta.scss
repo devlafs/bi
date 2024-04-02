@@ -1,0 +1,197 @@
+ //.consulta {}
+ //cabecalho das colunas de configuração de uma consulta
+ .consulta__headerconfig {
+     //  padding: 20px 5px 20px 20px;
+     padding: 20px 5px 20px 20px;
+     .dropdown {
+         .btn--noborder {
+             color: $text-color;
+             &.btn-outline-secondary {
+                 @include rounded(100%);
+                 &:hover {
+                     color: $white-color;
+                 }
+             }
+         }
+     }
+     .select2-container--bp1 {
+         background-color: $white-color;
+     }
+     p {
+         font-weight: 300;
+         font-size: 11px;
+         color: $text-color;
+         line-height: 14px;
+     }
+ }
+ 
+ // block de conteudo para definição do cubo e escolha dos atributos
+ .consulta__fonte {
+     background-color: $consulta--bg_1;
+     height: calc(100vh - 30px);
+     .consulta__headerconfig {
+         &::before {
+             content: "";
+             width: 0;
+             height: 0;
+             border-left: 16px solid transparent;
+             border-right: 16px solid transparent;
+             border-bottom: 16px solid $consulta--bg_2;
+             position: absolute;
+             right: 0;
+             left: 0;
+             margin-left: auto;
+             margin-right: auto;
+             z-index: 120;
+             //  top: 135px;
+             top: 151px;
+         }
+     }
+     .consulta__cubocontent {
+         background: $consulta--bg_2;
+         //  overflow-y: scroll;
+         overflow-x: hidden;
+         height: 100%;
+         //  height: calc(100vh - 200px);
+         padding-top: 20px;
+         margin: 0px -15px 0px 0px;
+         ul {
+             padding-left: 20px;
+             padding-right: 20px;
+         }
+     }
+ }
+ 
+ //block de conteudo para definição dos tipos de atributos que serão usandos nos eixos
+ .consulta__paramentros {
+     background: $consulta--bg_3;
+     padding-bottom: 24px;
+     //  height: calc(100vh - 48px);
+ }
+ 
+ //  .consulta__paramentroscontent{}
+ // .consulta__paramentroscontent{
+ // }
+ .block--parametro {
+     h4 {
+         font-weight: 300;
+         font-size: 11px;
+         color: $text-color;
+         letter-spacing: 0.85px;
+         padding: 0px;
+         line-height: 11px;
+         margin-top: 0px;
+         margin-bottom: 0px;
+     }
+     i {
+         color: $primary-color;
+         font-size: 18px;
+         //  line-height: 16px;
+     }
+ }
+ 
+ .block--parametro_list {
+     /* block__paramentros--2: */
+     background: $white-color;
+     border: 1px solid $gray1-bp1;
+     min-height: 186px;
+     @include rounded(2px);
+ }
+ 
+ .blank-slate {
+     margin: 2px auto;
+ }
+ 
+ //block de conteudo para definição dos tipos de atributos que serão usandos nos eixos
+ .consulta__preview {
+     margin-top: 24px;
+     background-color: $gray2-bp1;
+     //  height: calc(100vh - 72px);
+     h4 {
+         font-weight: 600;
+         font-size: 18px;
+         letter-spacing: 1.5px;
+         color: $primary-color;
+     }
+     .block__chart--preview {
+         height: 50vh;
+         //  height: 300px;
+         //  height: auto;
+     }
+     .block--navigation-charts {
+         margin: 24px 0px 0px 0px;
+         .navigation-charts_list {
+             list-style-type: none;
+             padding: 0px;
+             margin: 0px;
+             li {
+                 display: inline-block;
+                 .btn-icon {
+                     background-color: transparent;
+                     border: none;
+                     cursor: pointer;
+                     i {
+                         font-size: 24px;
+                         line-height: 24px;
+                         height: 24px;
+                         width: 24px;
+                         color: #A6A3A6
+                     }
+                     &.active {
+                         i {
+                             color: $primary-color;
+                         }
+                     }
+                     &:hover {
+                         i {
+                             color: $secondary-color;
+                         }
+                     }
+                 }
+             }
+         }
+     }
+     .block--consulta__preview {
+         height: auto;
+         //  height: calc(50vh - 36px);
+         position: relative;
+         .dataTables_wrapper {
+             height: 49vh;
+             overflow-x: hidden;
+             overflow-x: scroll;
+         }
+     }
+ }
+ 
+ .alert.alert-info {
+     position: absolute;
+     right: -15px;
+     top: 0px;
+     bottom: 0px;
+     margin-top: auto;
+     margin-bottom: auto;
+     height: 58px;
+     border-radius: 0;
+     width: calc(25vw - 1px);
+     background-color: #08589E;
+     border-color: #08589E;
+     color: #ffffff;
+     i {
+         font-size: 36px;
+         height: 36px;
+         width: 36px;
+         line-height: 36px;
+         margin-right: 16px;
+     }
+     p {
+         text-align: left;
+         width: 80%;
+         font-size: 12px;
+         font-weight: 300;
+         margin-bottom: 0px;
+     }
+ }
+ 
+ .popover {
+     max-width: 400px;
+ }

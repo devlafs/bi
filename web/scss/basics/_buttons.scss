@@ -1,0 +1,95 @@
+.btn {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    line-height: 1em;
+}
+
+.btn-primary {
+    border-radius: 2px;
+    background-color: $primary-color;
+    border-color: $primary-color;
+    letter-spacing: .2em;
+    &:hover {
+        background-color: mix($white-color, $primary-color, 20%);
+        border-color: mix($white-color, $primary-color, 20%);
+    }
+    &:visited,
+    &:active,
+    &:focus {
+        background-color: mix($white-color, $primary-color, 40%);
+        border-color: mix($white-color, $primary-color, 40%);
+        color: $white-color;
+    }
+}
+
+.btn-outline-primary {
+    border-color: $primary-color;
+    color: $primary-color;
+    &:hover {
+        background-color: mix($white-color, $primary-color, 20%);
+        border-color: mix($white-color, $primary-color, 20%);
+    }
+}
+
+.btn-secondary {
+    border-radius: 2px;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    letter-spacing: .2em;
+    color: $white-color;
+    &:hover {
+        background-color: mix($white-color, $secondary-color, 20%);
+        border-color: mix($white-color, $secondary-color, 20%);
+        color: $white-color;
+    }
+}
+
+.btn-outline-secondary {
+    border-color: $secondary-color;
+    color: $secondary-color;
+    &:hover {
+        background-color: mix($white-color, $secondary-color, 20%);
+        border-color: mix($white-color, $secondary-color, 20%);
+    }
+}
+
+.btn-outline-light {
+    border-color: $gray2-bp1;
+    color: $gray2-bp1;
+    background-color: transparent;
+    &:hover {
+        background-color: $gray2-bp1;
+        border-color: $gray2-bp1;
+        color: $text-color;
+    }
+}
+
+.btn-link {
+    color: mix($white-color, $primary-color, 20%);
+    &:hover {
+        color: mix($text-color, $primary-color, 20%);
+    }
+}
+
+.btn-link--inverse {
+    color: $white-color;
+    background-color: transparent;
+    &:hover {
+        color: mix($text-color, $primary-color, 20%);
+    }
+}
+
+.btn--noborder {
+    border: none;
+    color: $white-color;
+    border-radius: 0px;
+    padding: .5rem .645rem;
+    &:hover {
+        background: mix($text-color, $secondary-color, 20%);
+    }
+}
+
+.btn__rounded {
+    padding-right: 0.7857rem;
+    padding-left: 0.7857rem;
+    @include rounded (100px);
+}

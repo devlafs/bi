@@ -1,0 +1,15 @@
+{
+  "name": "inspire-tree",
+  "homepage": "https://github.com/helion3/inspire-tree",
+  "version": "2.0.4",
+  "_release": "2.0.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "2.0.4",
+    "commit": "de588784a336c489f3d91ad748e5c768347f4d3a"
+  },
+  "_source": "https://github.com/helion3/inspire-tree.git",
+  "_target": "^2.0.4",
+  "_originalSource": "inspire-tree",
+  "_direct": true
+}

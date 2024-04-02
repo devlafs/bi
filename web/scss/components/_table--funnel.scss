@@ -1,0 +1,17 @@
+.table--funnel {
+    margin-bottom: 0;
+}
+
+.table-bordered td.table--footer {
+    border-bottom: none !important;
+}
+
+.table-success {
+    background-color: $primary-color;
+    color: $white-color;
+}
+
+.table-danger {
+    background-color: $error-bp1;
+    color: $white-color;
+}

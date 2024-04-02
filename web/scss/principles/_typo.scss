@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+*,
+html,
+body {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 14px; //standard font
+    line-height: 1.2em;
+}
+
+h1 {
+    font-size: 2.2857142857142856em;
+    font-weight: 300;
+    color: $text-color;
+    letter-spacing: 0;
+    line-height: 2.2857142857142856em;
+}
+
+h2 {
+    font-weight: 400;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 26px;
+    color: $text-color;
+    // letter-spacing: 1.85px;
+}

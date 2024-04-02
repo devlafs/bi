@@ -1,0 +1,28 @@
+.pageContent--nav {
+    background-color: $primary-color;
+    height: 3.429em;
+    .navbar-text {
+        font-size: 1rem;
+        font-weight: 300;
+        border-bottom: 0;
+        color: $white-color;
+        margin-left: 1em;
+    }
+    .nav-link {
+        color: $white-color;
+        padding-top: 0.7857rem;
+        padding-bottom: 0.7857rem;
+        i {
+            font-size: 1.857rem;
+            color: $white-color;
+        }
+        &:hover {
+            background-color: mix($white-color, $primary-color, 20%);
+        }
+        &.disabled {
+            i {
+                color: $secondary-color;
+            }
+        }
+    }
+}

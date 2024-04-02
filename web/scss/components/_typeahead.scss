@@ -1,0 +1,71 @@
+.typeahead__field input {
+    padding: 0.9286rem 0.9286rem;
+    font-size: 0.9286rem;
+    border-radius: 0;
+    text-align: left;
+    background-color: transparent;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    &:focus {
+        border-bottom-color: $primary-color;
+    }
+}
+
+.typeahead__list {
+    .typeahead__item {
+        a {
+            padding: 0.6429rem 0.857em;
+        }
+    }
+    >li {
+        &:first-child {
+            a {
+                padding: 0.2143rem 0.857em 0.6429rem 0.857em;
+            }
+        }
+    }
+}
+
+.typeahead__dropdown>li>a,
+.typeahead__list>li>a {
+    color: $text-color;
+}
+
+.typeahead__field {
+    // color: $gray1-bp1;
+    .js-typeahead-sidebar {
+        color: $gray1-bp1;
+    }
+}
+
+.typeahead__cancel-button {
+    background: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMiIgaGVpZ2h0PSIxMiIgdmlld0JveD0iMCAwIDEyIDEyIj4gIDxwYXRoIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTguNjAyNTU4MjgsMTAgTDQuOTIwMTExNjksMTMuNjgyNDQ2NiBDNC42MDYwOTM2MiwxMy45OTY0NjQ3IDQuODU0OTkwMzksMTQuNzU0NDg1MyA1LjA1MDI1MjUzLDE0Ljk0OTc0NzUgQzUuMjQ1NTE0NjgsMTUuMTQ1MDA5NiA2LjAwMzUzNTMzLDE1LjM5MzkwNjQgNi4zMTc1NTM0MSwxNS4wNzk4ODgzIEwxMCwxMS4zOTc0NDE3IEwxMy42ODI0NDY2LDE1LjA3OTg4ODMgQzEzLjk5NjQ2NDcsMTUuMzkzOTA2NCAxNC43NTQ0ODUzLDE1LjE0NTAwOTYgMTQuOTQ5NzQ3NSwxNC45NDk3NDc1IEMxNS4xNDUwMDk2LDE0Ljc1NDQ4NTMgMTUuMzkzOTA2NCwxMy45OTY0NjQ3IDE1LjA3OTg4ODMsMTMuNjgyNDQ2NiBMMTEuMzk3NDQxNywxMCBMMTUuMDc5ODg4Myw2LjMxNzU1MzQxIEMxNS4zOTM5MDY0LDYuMDAzNTM1MzMgMTUuMTQ1MDA5Niw1LjI0NTUxNDY4IDE0Ljk0OTc0NzUsNS4wNTAyNTI1MyBDMTQuNzU0NDg1Myw0Ljg1NDk5MDM5IDEzLjk5NjQ2NDcsNC42MDYwOTM2MiAxMy42ODI0NDY2LDQuOTIwMTExNjkgTDEwLDguNjAyNTU4MjggTDYuMzE3NTUzNDEsNC45MjAxMTE2OSBDNi4wMDM1MzUzMyw0LjYwNjA5MzYyIDUuMjQ1NTE0NjgsNC44NTQ5OTAzOSA1LjA1MDI1MjUzLDUuMDUwMjUyNTMgQzQuODU0OTkwMzksNS4yNDU1MTQ2OCA0LjYwNjA5MzYyLDYuMDAzNTM1MzMgNC45MjAxMTE2OSw2LjMxNzU1MzQxIEw4LjYwMjU1ODI4LDEwIFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00IC00KSIvPjwvc3ZnPg==') no-repeat scroll 50% transparent;
+}
+
+.typeahead__container.cancel:not(.loading) .typeahead__cancel-button {
+    opacity: .50;
+}
+
+.typeahead__button {
+    button {
+        background-color: transparent;
+        // border-top: 0;
+        // border-left: 0;
+        // border-right: 0;
+        border: none;
+        color: $white-color;
+        border-radius: 0;
+        padding: 0px 5px 8px 9px;
+        &:hover {
+            background: transparent;
+            i {
+                color: $primary-color;
+            }
+        }
+        i {
+            font-size: 1.571rem;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+#chartbp1 
+{
+    width: 100%;
+    height: 500px;
+    font-size: 11px;
+}	
+.div-loading
+{
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+}
+.div-loading.loading 
+{
+    overflow: hidden;   
+}
+.div-loading.loading
+{
+    display: block;
+}
+        
+.breadcrumb-cp,
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+.cursor-nodrop
+{
+    cursor: no-drop;
+}
+        
+.btn-xs 
+{
+    padding: 1px 5px;
+    font-size: 12px;
+    line-height: 1.5;
+    border-radius: 3px;
+}
+        
+.card.card-consulta .card-block .dataTables_wrapper 
+{
+    height: 100%;
+}
+        
+.help-block 
+{
+    color: #ff0000;
+}
+        
+.has-success .form-control 
+{
+    border-color: #d0ccd1;
+}
+        
+a 
+{
+    color: #237486;
+    text-decoration: none;
+}
+        
+.btn-primary:visited, .btn-primary:active, .btn-primary:focus 
+{
+    background-color: #237486;
+    border-color: #237486;
+    color: #fff;
+}
+        
+.page-content #content--container 
+{
+    padding: 20px;
+}
+        
+span.info-beta
+{
+    color: #FFF;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    padding-left: 5px;
+}

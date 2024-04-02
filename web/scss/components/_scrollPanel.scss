@@ -1,0 +1,98 @@
+.page-content {
+    &.scroll-pane {
+        height: calc(100vh - 188px);
+        width: auto;
+        overflow-x: none;
+        overflow-y: auto;
+        margin-top: 1.714em;
+        // -webkit-box-shadow: inset 0px -2px 4px 0px mix($text-color, $secondary-color, 40%);
+        // -moz-box-shadow: inset 0px -2px 4px 0px mix($text-color, $secondary-color, 40%);
+        // box-shadow: inset 0px -2px 4px 0px mix($text-color, $secondary-color, 40%);
+    }
+    .jspVerticalBar,
+    .jspTrack {
+        background: transparent;
+    }
+    .jspDrag {
+        border-radius: 100px;
+        margin: 0 0.150em;
+        background: mix($text-color, $secondary-color, 40%);
+    }
+    // .jspDragTop {}
+    // .jspDragBottom {}
+}
+
+#sidebar--overflowBar {
+    &.scroll-pane {
+        height: calc(100vh - 188px);
+        width: auto;
+        overflow-x: none;
+        overflow-y: auto;
+        margin-top: 1.714em;
+        // -webkit-box-shadow: inset 0px -2px 4px 0px mix($text-color, $secondary-color, 40%);
+        // -moz-box-shadow: inset 0px -2px 4px 0px mix($text-color, $secondary-color, 40%);
+        // box-shadow: inset 0px -2px 4px 0px mix($text-color, $secondary-color, 40%);
+    }
+    .jspVerticalBar,
+    .jspTrack {
+        background: transparent;
+    }
+    .jspDrag {
+        border-radius: 100px;
+        margin: 0 0.150em;
+        background: mix($text-color, $secondary-color, 40%);
+    }
+    // .jspDragTop {}
+    // .jspDragBottom {}
+}
+
+#sidebar--tab-pane {
+    &.scroll-pane {
+        overflow-x: none;
+        overflow-y: auto;
+        .jspVerticalBar,
+        .jspTrack {
+            background: transparent;
+        }
+        .jspDrag {
+            border-radius: 100px;
+            margin: 0.20em;
+            background: mix($white-color, $secondary-color, 60%);
+        }
+    }
+}
+
+#filter-list__container {
+    position: relative;
+    width: 100%;
+    &::after {
+        border-left: 2px solid transparentize($primary-color, .50);
+        width: 2px;
+        height: 100%;
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0px;
+        z-index: 1;
+        @include box-shadow( 0 12px 5px transparentize($gray1-bp1, .50));
+    }
+    .select--plus,
+    ul {
+        z-index: 10;
+    }
+    overflow-x: hidden;
+    // .scroll-pane {
+    //     overflow-x: none;
+    //     overflow-y: auto;
+    //     // margin-bottom: 1.714em;
+    //     .jspVerticalBar,
+    //     .jspTrack {
+    //         background: transparent;
+    //     }
+    //     .jspDrag {
+    //         border-radius: 100px;
+    //         margin: 0.20em;
+    //         background: mix($white-color, $secondary-color, 60%);
+    //     }
+    // }
+}

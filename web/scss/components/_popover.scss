@@ -1,0 +1,78 @@
+.popover {
+    .popover-content {
+        width: 383px;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-left: 0px;
+        .title {
+            background-color: rgba(0, 0, 0, .05);
+            padding: 8px;
+            margin-top: -1px !important;
+            margin-bottom: 12px;
+            h4 {
+                font-size: 10px !important;
+                color: $text-color;
+                line-height: 10px;
+                margin-bottom: 0px;
+            }
+            .btn {
+                font-size: 10px;
+            }
+        }
+        .filterform {
+            &.form-group {
+                input {
+                    padding: 5px 10px;
+                    font-size: 0.9286rem;
+                    border-radius: 0;
+                    text-align: left;
+                    background-color: transparent;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    border-radius: 0;
+                    border-bottom-color: $gray1-bp1;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    width: 185px;
+                    &::-webkit-input-placeholder,
+                    &::-moz-placeholder,
+                    &:-ms-input-placeholder,
+                    &:-moz-placeholder {
+                        color: $gray1-bp1
+                    }
+                    &:focus {
+                        border-bottom-color: $primary-color;
+                    }
+                }
+                .btn {
+                    padding: 7px;
+                }
+                .dropdown {
+                    width: 130px;
+                }
+            }
+            input {
+                padding: 0.9286rem 0.9286rem;
+                font-size: 0.9286rem;
+                border-radius: 0;
+                text-align: left;
+                background-color: transparent;
+                border-top: 0;
+                border-left: 0;
+                border-right: 0;
+                border-radius: 0;
+                border-bottom-color: $gray1-bp1;
+                &::-webkit-input-placeholder,
+                &::-moz-placeholder,
+                &:-ms-input-placeholder,
+                &:-moz-placeholder {
+                    color: $gray1-bp1
+                }
+                &:focus {
+                    border-bottom-color: $primary-color;
+                }
+            }
+        }
+    }
+}
