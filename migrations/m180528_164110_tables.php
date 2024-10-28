@@ -38,6 +38,7 @@ class m180528_164110_tables extends Migration {
             'sql' => Schema::TYPE_TEXT . ' null',
             'caminho' => Schema::TYPE_STRING . ' null',
             'periodicidade' => Schema::TYPE_STRING . ' not null',
+            'sincrono' => Schema::TYPE_BOOLEAN . ' not null default FALSE',
             'is_ativo' => Schema::TYPE_BOOLEAN . ' not null default TRUE',
             'is_excluido' => Schema::TYPE_BOOLEAN . ' not null default FALSE',
             'created_at' => Schema::TYPE_TIMESTAMP . ' null',

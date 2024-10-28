@@ -37,6 +37,7 @@ class m181209_143213_tabelas_proprias extends Migration {
             'cargo' => Schema::TYPE_STRING . ' null',
             'departamento' => Schema::TYPE_STRING . ' null',
             'celular' => Schema::TYPE_STRING . ' null',
+            'status' => Schema::TYPE_STRING . ' null',
             'obs' => Schema::TYPE_TEXT . ' null',
             'acesso_bi' => Schema::TYPE_BOOLEAN . ' not null default TRUE',
             'is_ativo' => Schema::TYPE_BOOLEAN . ' not null default TRUE',
@@ -48,6 +49,18 @@ class m181209_143213_tabelas_proprias extends Migration {
         ], $tableOptions);
 
         $this->addForeignKey('adus_adpe_fk', '{{%admin_usuario}}', 'perfil_id', '{{%admin_perfil}}', 'id');
+
+        $this->execute("CREATE TABLE `rba_acesso` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `admusua_id` int(11) NOT NULL,
+  `dthr_login` datetime NOT NULL,
+  `desc_ip` varchar(15) NOT NULL,
+  `desc_useragent` varchar(200) NOT NULL,
+  `desc_data` varchar(20) DEFAULT NULL,
+  `bpbi` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`),
+  KEY `admusua_id` (`admusua_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=8891 DEFAULT CHARSET=utf8 ROW_FORMAT=COMPACT;");
 
         return true;
     }
